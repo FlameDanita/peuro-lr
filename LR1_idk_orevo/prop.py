@@ -11,6 +11,7 @@ def __init_prop():
         f.readline()
         for line in f.readlines():
             values = line.split(';')
+            print(values)
             pd = {headers[0]: values[0]}
             for head, val in zip(headers[1:], values[1:]):
                 pd[head] = float(val)
